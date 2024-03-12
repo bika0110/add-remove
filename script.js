@@ -9,10 +9,12 @@ add.addEventListener("click",function(){
     else{
          li = document.createElement('li');
          li.textContent = inp.value;
-         ul.appendChild(li);
-         inp.value = "";
+         ul.appendChild(li);{
+            inp.value = "";
+         }
+         
     }
 })
 remove.addEventListener("click",function(){
-   ul.removeChild(li)
+   ul.removeChild(li);
 })
